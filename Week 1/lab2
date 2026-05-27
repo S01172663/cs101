@@ -1,0 +1,30 @@
+#Solo Flight
+
+name = input("What is your name? ")
+destination_city = input("What city are you flying to? ")
+distance_in_miles = float(input("What is the distance to your destination in miles? "))
+car_mpg = float(input("What is the miles per gallon of your car? " ))
+gas_price = float(input("What is the current price of gas per gallon? "))
+
+
+print("---Trip Summary---")
+print(f"Name:                   {name}")
+print(f"Destination:            {destination_city}")
+print(f"Distance (miles):       {distance_in_miles}")
+print(f"Car miles per gallon:   {car_mpg}")
+print(f"Gas price per gallon:  ${gas_price:.2f}")
+print("------------------")
+
+print("---Trip Costs---")
+print(f"Total gallons needed:             {distance_in_miles / car_mpg:.2f}")
+print(f"Total gas cost for the trip:     ${distance_in_miles / car_mpg * gas_price:.2f}")
+print(f"Total gas cost for a round trip: ${distance_in_miles / car_mpg * gas_price * 2:.2f}")
+print(f"Cost per mile:                   ${gas_price / car_mpg:.2f}")
+print("----------------")
+
+total_hours = distance_in_miles / 60
+drive_days = total_hours // 24
+drive_hours = total_hours % 24
+print("Fun facts about the distance:")
+print(f"How many times can you walk around the earth (24,901 miles) with that distance? {distance_in_miles / 24901:.2f}")
+print(f"How many days would it take to drive that distance going exactly 60 mph? {drive_days:.0f} day(s) and {drive_hours:.0f} hour(s)")
