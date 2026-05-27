@@ -1,0 +1,24 @@
+# Variables
+# Variable - a named container that holds a value.
+
+#                                               Key Rules:
+# 1. A variable is created the moment you assign a value to it- no declaration needed.
+# 2. Names are case sensitive; age and Age are two different variables.
+# 3. Names can contain letters, numbers, and underscores, but cannot start with a number.
+# 4. Use snake_case for multi-word variable names (e.g., my_variable).
+
+# Creating variables - just name and assign a value to it.
+
+name = "Malica"                         # String variable - text enclosed in quotes
+age = 24                                # Integer variable - whole number
+gpa = 1.93                             # Float variable - decimal number
+is_student = True                      # Boolean variable - True or False
+
+# Reassigning variables - you can change the value of a variable by rewriting it.
+age = 25                                # Now age is 25 instead of 24
+
+# Printing Variables
+print(name)                             # Output: Malica
+print(age)                              # Output: 25
+print(gpa)                              # Output: 1.93
+print(is_student)                       # Output: True

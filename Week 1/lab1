@@ -1,0 +1,25 @@
+name = input("What's your name? ")
+age = int(input("How old are you? "))
+hometown = input("Where are you from? ")
+fav_num = int(input("What's your favorite number? "))
+
+print("-----User Profile-----")
+print(f"Name:            {name}")
+print(f"Age:             {age}")
+print(f"Hometown:        {hometown}")
+print(f"Favorite Number: {fav_num}")
+print("----------------------")
+
+print("---Favorite Number Stats---")
+print(f"Even or Odd:       {'Even' if fav_num % 2 == 0 else 'Odd'}")
+print(f"Squared:           {fav_num ** 2}")
+print(f"Cubed:             {fav_num ** 3}")
+print(f"Remainder when /3: {fav_num % 3}")
+print("---------------------------")
+
+current_year = 2026
+
+print("---Age Calculator---")
+print(f"Born in:      {current_year - age}")
+print(f"Turns 100 in: {current_year - age + 100}")
+print("--------------------") 
